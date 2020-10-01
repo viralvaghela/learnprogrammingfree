@@ -1,21 +1,37 @@
 [{
-        name: "Node JS Tutorial",
-        instructor: "NetNinja",
-        url: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
-        description: "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
-        image: "",
-        tags: [
+        "name": "Node JS Tutorial",
+        "instructor": "NetNinja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+        "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
+        "image": "",
+        "tags": [
             "nodejs",
             "javascript",
             "web"
-        ],
+        ]
     },
     {
-        name: 'Djano Tutorial',
-        instructor: 'Django Girls',
-        url: 'https: //tutorial.djangogirls.org/en/',
-        description: 'A well designed course for beginners ',
-        image: '',
-        tags: ['web development', 'Django']
+        "name": "Node JS Tutorial",
+        "instructor": "NetNinja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+        "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
+        "image": "",
+        "tags": [
+            "nodejs",
+            "javascript",
+            "web"
+        ]
+    },
+    {
+        "name": "Node JS Tutorial",
+        "instructor": "NetNinja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+        "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
+        "image": "",
+        "tags": [
+            "nodejs",
+            "javascript",
+            "web"
+        ]
     }
 ]
