@@ -56,7 +56,7 @@ Now, you can add books,videos,blogs etc in the resources/json.data
         "name": "Flutter Complete Beginner Course",
         "instructor": "Mtechviral",
         "url": "https://www.youtube.com/watch?v=6wQwnTIBD1Y",
-        "description": "Flutter complete beginner course by Mtechvirak",
+        "description": "Flutter complete beginner course by Mtechviral",
         "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
         "tags": [
             "flutter",
