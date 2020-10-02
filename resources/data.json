@@ -13,28 +13,14 @@
     },
     {
         "id": 2,
-        "name": "Node JS Tutorial",
+        "name": "Flutter Complete Beginner Course",
         "instructor": "NetNinja",
-        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
-        "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
-        "image": "http://learnprogrammingfree.codingboy.in/resources/images/node.png",
+        "url": "https://www.youtube.com/watch?v=6wQwnTIBD1Y",
+        "description": "Flutter complete beginner course by Mtechvirak",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
         "tags": [
-            "nodejs",
-            "javascript",
-            "web"
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Node JS Tutorial",
-        "instructor": "NetNinja",
-        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
-        "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
-        "image": "http://learnprogrammingfree.codingboy.in/resources/images/node.png",
-        "tags": [
-            "nodejs",
-            "javascript",
-            "web"
+            "flutter",
+            "mobile development"
         ]
     }
 ]
