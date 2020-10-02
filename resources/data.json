@@ -23,4 +23,16 @@
             "mobile development"
         ]
     }
+    {
+        "id": 3,
+        "name": "Derak Banas's Playlist - JAVA",
+        "instructor": "Derak Banas",
+        "url": "https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19",
+        "description": "A complete beginner course for JAVA by Derak Banas's Playlist",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
+        "tags": [
+            "Java",
+            "web"
+        ]
+    }
 ]
