@@ -1,5 +1,5 @@
 <h1 align="center">Learn Programming Free</h1>
-<h3 align="center">About List of best free programming resources on the internet</h3>
+<h3 align="center">List of best free programming resources on the internet</h3>
 
 ## About
 
@@ -76,3 +76,8 @@ if you have image file then upload inside resources/images/ and write image addr
 Please open [a new issue in the GitHub repository](https://github.com/viralvaghela/learnprogrammingfree/issues) with steps to reproduce the problem you're experiencing.
 
 Be sure to include as much information including screenshots, text output, and both your expected and actual results.
+
+##### Made with ♥ by <a href="https://github.com/viralvaghela">viralvaghela</a>
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/viralvaghela)
+
