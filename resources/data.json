@@ -22,5 +22,17 @@
             "flutter",
             "mobile development"
         ]
-    }
+    },
+    {
+        "id": 3,
+        "name": "Learn Python — Full Course for Beginners by FreeCodeCamp",
+        "instructor": "Mike Dane",
+        "url": "https://www.youtube.com/watch?v=rfscVS0vtbw&feature=emb_title",
+        "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the video and you'll be a python programmer in no time!",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/python.png",
+        "tags": [
+            "Python",
+            "Python3"
+        ]
+    },
 ]
