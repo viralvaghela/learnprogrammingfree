@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
     data = jsonDecode(res.body);
     // print(jsonData);
     isLoading = false;
-    print(data);
+    // print(data);
     setState(() {});
   }
 
@@ -55,19 +55,29 @@ class _MyAppState extends State<MyApp> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("${item['name']}",
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            color:
-                                                Theme.of(context).primaryColor,
-                                            fontWeight: FontWeight.bold))
+                                    Padding(
+                                      padding: EdgeInsets.only(top: 10),
+                                      child: Text("${item['name']}",
+                                          style: TextStyle(
+                                              fontSize: 20,
+                                              color: Theme.of(context)
+                                                  .primaryColor,
+                                              fontWeight: FontWeight.bold)),
+                                    )
                                   ],
                                 ),
                                 Image.network(
                                   item['image'],
                                   fit: BoxFit.cover,
                                 ),
-                                Text("${item['description']}"),
+                                Padding(
+                                  padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+                                  child: Text(
+                                    "${item['description']}",
+                                    style: TextStyle(),
+                                  ),
+                                ),
+                                getTags(item['tags']),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.end,
                                   children: [
@@ -85,6 +95,26 @@ class _MyAppState extends State<MyApp> {
                   ),
                 )
               : Center(child: CircularProgressIndicator())),
+    );
+  }
+
+  Widget getTags(list) {
+    print(list);
+    List tagsList = list;
+    print(tagsList[0]);
+    return SingleChildScrollView(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: tagsList.map(
+          (i) {
+            return Chip(
+              backgroundColor: Colors.blue,
+              label: Text(i, style: TextStyle(color: Colors.white)),
+              padding: EdgeInsets.all(5),
+            );
+          },
+        ).toList(),
+      ),
     );
   }
 
