@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
                                 textAlign: TextAlign.start,
                               ),
                               Padding(padding: EdgeInsets.all(10)),
-                              Image.network(item['']),
+                              Image.network(item['image']),
                               Text("${item['description']}"),
                             ],
                           ),
