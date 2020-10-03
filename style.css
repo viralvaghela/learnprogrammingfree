@@ -1,0 +1,16 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  padding-left : 30px;
+  font-family: 'Poppins', sans-serif;
+}
+p{
+  padding:10px;
+}
+  
+.card-title{
+  padding: 10px;
+  font-weight: bold;
+}
