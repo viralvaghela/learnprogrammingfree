@@ -1,49 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JSON Test</title>
-    <link rel="stylesheet" href='style.css'> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>      
-    <div id="myData" class = 'd-flex align-self-start justify-content-start flex-wrap' style = "margin:5px;"></div>
+
+<body class="bg-light">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+                <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+    <hr>
+    <div id="myData" class='d-flex align-self-start justify-content-start flex-wrap' style="margin:5px;">
+
+    </div>
     <script>
+        var array = []
         fetch('resources/data.json')
             .then(function (response) {
                 return response.json();
             })
             .then(function (data) {
-                appendData(data);
+                array.push(data);
+                appendData(array[0]);
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
+       
+        $('#search').on('keyup',function(){
+            var value = $(this).val();
+            console.log(value);
+            if(value == ""){
+                appendData(array[0]);
+            }
+            else{
+                var filtered_data = filtered(value,array);
+                appendData(filtered_data);
+            }
+        })
+        
+        function filtered(value,data){
+            data = data[0];
+            var filtered_data = [];
+            for(var i=0;i<data.length;i++){
+                var tags = data[i].tags;
+                console.log(tags);
+                var check = false;
+                for(var j =0;j<tags.length;j++){
+                    if(tags[j].startsWith(value)){
+                        check = true;
+                        break;
+                    }
+                }
+                if(check == true){
+                    console.log(i);
+                    filtered_data.push(data[i]);
+                }
+            }
+            return filtered_data;
+        }
         function appendData(data) {
             var mainContainer = document.getElementById("myData");
+            mainContainer.innerHTML = "";
             for (var i = 0; i < data.length; i++) {
                 var card = document.createElement("div");
-                card.setAttribute('class','card align-self-center');
-                card.setAttribute('style', 'width: 18rem; margin:15px;'); 
-               
-                if(data[i].image != null){
+                card.setAttribute('class', 'card align-self-center');
+                card.setAttribute('style', 'width: 18rem; margin:15px;');
+
+                if (data[i].image != null) {
                     card.innerHTML = `<img class="card-img-top" src="` + data[i].image + `">`
                 }
                 card.innerHTML += `<h5 class="card-title">` + data[i].name + `<h5>`;
-                card.innerHTML += `<p class="card-text">` + data[i].description +  `</p>`;
+                card.innerHTML += `<p class="card-text">` + data[i].description + `</p>`;
                 card.innerHTML += `<ul class="list-group list-group-flush">` +
-                `<li class="list-group-item">` + "Instructor: " + data[i].instructor + `</li>` +
-                `<li class="list-group-item" style="height:auto">` + '<a href = "' + data[i].url + `"> Link </a></li>`
-                 + `</ul>`;
+                    `<li class="list-group-item">` + "Instructor: " + data[i].instructor + `</li>` +
+                    `<li class="list-group-item" style="height:auto">` + '<a href = "' + data[i].url +
+                    `"> Link </a></li>` +
+                    `</ul>`;
                 mainContainer.appendChild(card);
             }
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
