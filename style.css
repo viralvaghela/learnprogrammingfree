@@ -1,16 +1,67 @@
 *{
   font-family: 'Poppins', sans-serif;
 }
-
+*, *:before, *:after {box-sizing:  border-box !important;}
 body{
-  padding-left : 30px;
   font-family: 'Poppins', sans-serif;
+}
+input[type=text] {
+  width: 200px;
+  height :40px;
+  padding :10px;
+  border-width: 2px;
+  border-radius: 5px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 95%;
+  border-width: 2px;
+  border-radius: 5px;
+}
+.navbar{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#myData{
+  padding-left: 30px;
+}
+.container{
+  width:1200px;
+  margin:20px auto;
+  columns: 3;
+  column-gap: 40px;
+}
+.container .card{
+  width:100%;
+  margin: 0 0 20px;
+  padding: 10px; 
+  background: #fff;
+  overflow: hidden;
+  break-inside: avoid;
+}
+.container .card img{
+  max-width: 100%;
 }
 p{
   padding:10px;
 }
-  
 .card-title{
   padding: 10px;
   font-weight: bold;
+}
+.svg-icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }

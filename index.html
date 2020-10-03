@@ -1,49 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JSON Test</title>
-    <link rel="stylesheet" href='style.css'> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Learn Programming Free</title>
+
+
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>      
-    <div id="myData" class = 'd-flex align-self-start justify-content-start flex-wrap' style = "margin:5px;"></div>
+
+<body class="bg-light">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <nav class="navbar">
+            <input id="search" type="text" name="search" placeholder="Search..">
+            <a href="https://github.com/viralvaghela/learnprogrammingfree">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+                <path fill="none" d="M19.175,4.856L15.138,0.82c-0.295-0.295-0.817-0.295-1.112,0L8.748,6.098c-0.307,0.307-0.307,0.805,0,1.112l1.462,1.462l-1.533,1.535L7.215,8.746c-0.307-0.307-0.805-0.307-1.112,0l-5.278,5.276c-0.307,0.307-0.307,0.805,0,1.112l4.037,4.037c0.154,0.153,0.355,0.23,0.556,0.23c0.201,0,0.403-0.077,0.556-0.23l5.28-5.276c0.148-0.148,0.23-0.347,0.23-0.556c0-0.209-0.083-0.409-0.23-0.556l-1.464-1.464l1.533-1.535l1.462,1.462c0.153,0.153,0.355,0.23,0.556,0.23c0.201,0,0.402-0.077,0.556-0.23l5.278-5.278c0.147-0.147,0.23-0.347,0.23-0.556C19.406,5.203,19.322,5.004,19.175,4.856zM9.585,13.339l-4.167,4.164l-2.925-2.925l4.166-4.164l0.906,0.905l-0.67,0.668c-0.307,0.307-0.307,0.805,0,1.112c0.154,0.153,0.356,0.23,0.556,0.23c0.203,0,0.403-0.077,0.556-0.23l0.67-0.668L9.585,13.339z M13.341,9.578l-0.906-0.906l0.663-0.662c0.307-0.307,0.307-0.805,0-1.112c-0.307-0.307-0.805-0.307-1.112,0L11.322,7.56l-0.906-0.906l4.166-4.166l2.925,2.925L13.341,9.578z"></path>
+            </svg>
+            
+            </a>
+            
+    </nav>
+    <div id="myData" class='container' style="margin:5px;">
+
+    </div>
     <script>
+        var array = []
         fetch('resources/data.json')
             .then(function (response) {
                 return response.json();
             })
             .then(function (data) {
-                appendData(data);
+                array.push(data);
+                appendData(array[0]);
             })
             .catch(function (err) {
                 console.log('error: ' + err);
             });
+       
+        $('#search').on('keyup',function(){
+            var value = $(this).val();
+            console.log(value);
+            if(value == ""){
+                appendData(array[0]);
+            }
+            else{
+                var filtered_data = filtered(value,array);
+                appendData(filtered_data);
+            }
+        })
+        
+        function filtered(value,data){
+            data = data[0];
+            var filtered_data = [];
+            for(var i=0;i<data.length;i++){
+                var tags = data[i].tags;
+                console.log(tags);
+                var check = false;
+                for(var j =0;j<tags.length;j++){
+                    if(tags[j].startsWith(value)){
+                        check = true;
+                        break;
+                    }
+                }
+                if(check == true){
+                    console.log(i);
+                    filtered_data.push(data[i]);
+                }
+            }
+            return filtered_data;
+        }
         function appendData(data) {
             var mainContainer = document.getElementById("myData");
+            mainContainer.innerHTML = "";
             for (var i = 0; i < data.length; i++) {
                 var card = document.createElement("div");
-                card.setAttribute('class','card align-self-center');
-                card.setAttribute('style', 'width: 18rem; margin:15px;'); 
-               
-                if(data[i].image != null){
+                card.setAttribute('class', 'card');
+                card.setAttribute('style', 'width: 18rem; margin:15px; ');
+
+                if (data[i].image != null) {
                     card.innerHTML = `<img class="card-img-top" src="` + data[i].image + `">`
                 }
                 card.innerHTML += `<h5 class="card-title">` + data[i].name + `<h5>`;
-                card.innerHTML += `<p class="card-text">` + data[i].description +  `</p>`;
+                card.innerHTML += `<p class="card-text">` + data[i].description + `</p>`;
                 card.innerHTML += `<ul class="list-group list-group-flush">` +
-                `<li class="list-group-item">` + "Instructor: " + data[i].instructor + `</li>` +
-                `<li class="list-group-item" style="height:auto">` + '<a href = "' + data[i].url + `"> Link </a></li>`
-                 + `</ul>`;
+                    `<li class="list-group-item">` + "Instructor: " + data[i].instructor + `</li>` +
+                    `<li class="list-group-item" style="height:auto">` + '<a href = "' + data[i].url +
+                    `"> Link </a></li>` +
+                    `</ul>`;
                 mainContainer.appendChild(card);
             }
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
