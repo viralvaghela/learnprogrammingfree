@@ -1,66 +1,65 @@
 [{
-
-    "id": 1,
-    "name": "Node JS Tutorial",
-    "instructor": "NetNinja",
-    "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
-    "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
-    "image": "http://learnprogrammingfree.codingboy.in/resources/images/node.png",
-    "tags": [
-        "nodejs",
-        "javascript",
-        "web"
-    ]
-},
-{
-    "id": 2,
-    "name": "Flutter Complete Beginner Course",
-    "instructor": "Mtechviral",
-    "url": "https://www.youtube.com/watch?v=6wQwnTIBD1Y",
-    "description": "Flutter complete beginner course by Mtechvirak",
-    "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
-    "tags": [
-        "flutter",
-        "mobile development"
-    ]
-},
-{
-    "id": 3,
-    "name": "Java Tutorial for Beginners | Full Course",
-    "instructor": "Telusko",
-    "url": "https://www.youtube.com/watch?v=8cm1x4bC610&ab_channel=Telusko",
-    "description": "Full course in Java for Beginners",
-    "image": "https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
-    "tags": [
-        "java",
-        "programming"
-    ]
-},
- {
-    "id": 4,
-    "name": "Java Tutorial for Complete Beginners",
-    "instructor": "Udemy",
-    "url": "https://www.udemy.com/course/java-tutorial/",
-    "description": "Learn to program using the Java programming language",
-    "image": "https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
-    "tags": [
-        "java",
-        "programming"
-    ]
-},
-{
-    "id": 5,
-    "name": "Learn Python — Full Course for Beginners by FreeCodeCamp",
-    "instructor": "Mike Dane",
-    "url": "https://www.youtube.com/watch?v=rfscVS0vtbw&feature=emb_title",
-    "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the video and you'll be a python programmer in no time!",
-    "image": "http://learnprogrammingfree.codingboy.in/resources/images/python.png",
-    "tags": [
-        "Python",
-        "Python3"
-    ]
-},
- {
+        "id": 1,
+        "name": "Node JS Tutorial",
+        "instructor": "NetNinja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+        "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/node.png",
+        "tags": [
+            "nodejs",
+            "javascript",
+            "web"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Flutter Complete Beginner Course",
+        "instructor": "Mtechviral",
+        "url": "https://www.youtube.com/watch?v=6wQwnTIBD1Y",
+        "description": "Flutter complete beginner course by Mtechvirak",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
+        "tags": [
+            "flutter",
+            "mobile development"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Java Tutorial for Beginners | Full Course",
+        "instructor": "Telusko",
+        "url": "https://www.youtube.com/watch?v=8cm1x4bC610&ab_channel=Telusko",
+        "description": "Full course in Java for Beginners",
+        "image": "https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
+        "tags": [
+            "java",
+            "programming"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Java Tutorial for Complete Beginners",
+        "instructor": "Udemy",
+        "url": "https://www.udemy.com/course/java-tutorial/",
+        "description": "Learn to program using the Java programming language",
+        "image": "https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
+        "tags": [
+            "java",
+            "programming"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Learn Python — Full Course for Beginners by FreeCodeCamp",
+        "instructor": "Mike Dane",
+        "url": "https://www.youtube.com/watch?v=rfscVS0vtbw&feature=emb_title",
+        "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the video and you'll be a python programmer in no time!",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/python.png",
+        "tags": [
+            "Python",
+            "Python3"
+        ]
+    },
+    {
         "id": 6,
         "name": "Derak Banas's Playlist - JAVA",
         "instructor": "Derak Banas",
