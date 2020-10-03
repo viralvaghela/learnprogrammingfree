@@ -71,19 +71,18 @@
             "Java",
             "web"
         ]
- },
+    },
  {
-    "id": 7,
-    "name": "Flutter & Firebase App Build Playlist",
-    "instructor": "The Net Ninja",
-    "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC",
-    "description": "Create Flutter app from scratch, using Firebase Firestore (a real-time database) and Firebase authentication.",
-    "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
-    "tags": [
+        "id": 7,
+        "name": "Flutter & Firebase App Build Playlist",
+        "instructor": "The Net Ninja",
+        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC",
+        "description": "Create Flutter app from scratch, using Firebase Firestore (a real-time database) and Firebase authentication.",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
+        "tags": [
         "Flutter",
         "Firebase",
         "Android development"
     ]
- },
+    }
 ]
-
