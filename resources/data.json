@@ -71,7 +71,7 @@
             "web"
         ]
     },
-    {
+   {
         "id": 7,
         "name": "Flutter & Firebase App Build Playlist",
         "instructor": "The Net Ninja",
@@ -97,3 +97,4 @@
             "Android development"
         ]
     }
+]
