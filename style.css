@@ -20,28 +20,28 @@ input[type=text]:focus {
   border-radius: 5px;
 }
 .navbar{
-  margin-left: 10px;
-  margin-top: 10px;
+
 }
 #myData{
-  padding-left: 30px;
+  padding: .5rem 1rem;
 }
-.container{
-  width:1200px;
+.container {
   margin:20px auto;
-  columns: 3;
-  column-gap: 40px;
 }
-.container .card{
-  width:100%;
-  margin: 0 0 20px;
-  padding: 10px; 
+.container .data-card{
+  margin-bottom: 30px;
+}
+.container .data-card .card-inner{
+  padding: 15px;
+  border: 1px solid rgba(0,0,0,.125);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
   background: #fff;
-  overflow: hidden;
-  break-inside: avoid;
 }
-.container .card img{
-  max-width: 100%;
+.container .data-card img{
+  max-width: 200px;
+  margin: auto;
+  display: block;
 }
 p{
   padding:10px;
