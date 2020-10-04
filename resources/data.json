@@ -70,5 +70,17 @@
             "Java",
             "web"
         ]
+    },
+    {
+        "id": 7,
+        "name": "Learn X in Y minutes, Where X=Python",
+        "instructor": "Louie Dinh",
+        "url": "https://learnxinyminutes.com/docs/python/",
+        "description": "For those who have already learnt a programming language, this short document will catch you up to speed quickly with Python's syntax",
+        "image": "https://i.pinimg.com/originals/19/f2/4c/19f24c973aa8270e17550676c55f4869.png",
+        "tags": [
+            "Python",
+            "Python3"
+        ]
     }
 ]
