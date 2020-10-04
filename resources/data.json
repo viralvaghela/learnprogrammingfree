@@ -250,20 +250,6 @@
  },
  {
    "id": 19,
-   "name": "Neural Networks from Scratch in Python",
-   "instructor": "sentdex",
-   "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3",
-   "description": "Learn Neural Networks from Scratch in Python",
-   "image": "https://i.ytimg.com/vi/Wo5dMEP_BbI/hqdefault.jpg",
-   "tags": [
-       "Python",
-       "Deep Learning",
-       "Neural Networks",
-       "Basics"
-   ]
- },
- {
-   "id": 19,
    "name": "C# Tutorials",
    "instructor": "Dani Krossing",
    "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhxD9HhtpuZV22KxEJAZ55X-",
