@@ -288,7 +288,7 @@
    ]
  },
  {
-   "id": 21,
+   "id": 22,
    "name": "Learning Flask",
    "instructor": "Julian Nash",
    "url": "https://www.youtube.com/playlist?list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L",
@@ -302,7 +302,7 @@
    ]
  },
  {
-   "id": 22,
+   "id": 23,
    "name": "GraphQL With React & Apollo",
    "instructor": "Traversy Media",
    "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbZrjw48EXLdM4dsOhURCLZx",
@@ -313,6 +313,34 @@
        "Web",
        "Advanced",
        "GraphQL"
+   ]
+ },
+ {
+   "id": 24,
+   "name": "Machine Learning",
+   "instructor": "Andrew Ng",
+   "url": "https://www.coursera.org/learn/machine-learning",
+   "description": "This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition.",
+   "image": "https://s3.amazonaws.com/coursera/topics/ml/large-icon.png",
+   "tags": [
+       "Basics",
+       "Machine Learning",
+       "Free Course",
+       "Coursera"
+   ]
+ },
+ {
+   "id": 25,
+   "name": "Deep Learning Specialization",
+   "instructor": "Andrew Ng",
+   "url": "https://www.coursera.org/specializations/deep-learning",
+   "description": "If you want to break into AI, this Specialization will help you do so. Deep Learning is one of the most highly sought after skills in tech. We will help you become good at Deep Learning.",
+   "image": "https://d15cw65ipctsrr.cloudfront.net/57/4be3fd8d16487ab9cfa7bba909b236/GreyLogoName1000x1000.png",
+   "tags": [
+       "Basics",
+       "Deep Learning",
+       "Free Course",
+       "Coursera"
    ]
  }
 ]
