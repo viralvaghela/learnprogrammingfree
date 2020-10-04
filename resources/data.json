@@ -128,7 +128,8 @@
             "Android development"
         ]
     },
-    {
+         
+ {
        "id": 11,
        "name": "Android Basics: User Interface",
        "instructor": "ProgramMe Programming",
@@ -342,5 +343,19 @@
        "Free Course",
        "Coursera"
    ]
- }
+ },
+  {
+        "id": 26,
+        "name": "C Programming Tutorial for Beginners",
+        "instructor": "Mike Dane",
+        "url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+        "description": "An introductory course in the C programming language which gradually dives into the core concepts of C",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFNNKOV5hqbrtHahriK-tINSKI1VWCniGbQQ&usqp=CAU",
+        "tags": [
+            "C",
+            "Programming",
+            "freeCodeCamp.org",
+            "Beginner",            
+        ]
+    }
 ]
