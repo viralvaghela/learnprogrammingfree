@@ -127,5 +127,206 @@
             "Free Course",
             "Android development"
         ]
-    }
+    },
+    {
+       "id": 11,
+       "name": "Android Basics: User Interface",
+       "instructor": "ProgramMe Programming",
+       "url": "https://www.udemy.com/course/learn-android-application-development-y/",
+       "description": "A beginner course on Android Application development",
+       "image": "https://img-b.udemycdn.com/course/240x135/1325686_e03b_3.jpg",
+       "tags": [
+           "Android",
+           "Udemy",
+           "Basics",
+           "User Interface",
+           "Java",
+           "Free Course",
+           "Android development"
+       ]
+   },
+   {
+      "id": 12,
+      "name": "React JS Frontend Web Development for Beginners",
+      "instructor": "Ryan Dhungel",
+      "url": "https://www.udemy.com/course/react-tutorial/",
+      "description": "Learn React JS along with Modern JavaScript from absolute scratch. This course is a getting started guide for beginners.",
+      "image": "https://img-b.udemycdn.com/course/240x135/2222856_2303.jpg",
+      "tags": [
+          "Web",
+          "Udemy",
+          "Basics",
+          "javascript",
+          "react js",
+          "Free Course"
+      ]
+  },
+  {
+     "id": 13,
+     "name": "React.js, quick start",
+     "instructor": "Sepehr Esmaeili",
+     "url": "https://www.udemy.com/course/reactjs-quick-start/",
+     "description": "Up and run with React.js quickly.",
+     "image": "https://img-b.udemycdn.com/course/240x135/2075934_7459.jpg",
+     "tags": [
+         "Web",
+         "Udemy",
+         "Basics",
+         "javascript",
+         "react js",
+         "Free Course"
+     ]
+ },
+ {
+    "id": 14,
+    "name": "Secure Your ReactJs Applications With Auth0",
+    "instructor": "Joel Lord",
+    "url": "https://www.udemy.com/course/secure-your-reactjs-applications-with-auth0/",
+    "description": "Easily Add Authentication To Your ReactJS Application.",
+    "image": "https://img-b.udemycdn.com/course/240x135/1545338_d22f_2.jpg",
+    "tags": [
+        "Web",
+        "Udemy",
+        "Advanced",
+        "javascript",
+        "react js",
+        "Free Course"
+    ]
+ },
+ {
+   "id": 15,
+   "name": "React.js Tic Tac Toe Game in 30 Minutes",
+   "instructor": "Bassir Jafarzadeh",
+   "url": "https://www.udemy.com/course/reactjs-tic-tac-toe-game-in-30-minutes/",
+   "description": "Be master in react development and learn component decomposition in action.",
+   "image": "https://img-b.udemycdn.com/course/240x135/2423698_fa07_2.jpg",
+   "tags": [
+       "Web",
+       "Udemy",
+       "Games",
+       "javascript",
+       "react js",
+       "Free Course"
+   ]
+ },
+ {
+   "id": 16,
+   "name": "Machine Learning with Python",
+   "instructor": "sentdex",
+   "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v",
+   "description": "Learn Machine Learning with Python",
+   "image": "https://i.ytimg.com/vi/OGxgnH8y2NM/hqdefault.jpg",
+   "tags": [
+       "Python",
+       "Machine Learning"
+   ]
+ },
+ {
+   "id": 17,
+   "name": "Django Web Development with Python",
+   "instructor": "sentdex",
+   "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDe9nqlirjacLkBYdgc2inh3",
+   "description": "Learn Django Web Development with Python",
+   "image": "https://i.ytimg.com/vi/yD0_1DPmfKM/hqdefault.jpg",
+   "tags": [
+       "Python",
+       "Web",
+       "Django"
+   ]
+ },
+ {
+   "id": 18,
+   "name": "Neural Networks from Scratch in Python",
+   "instructor": "sentdex",
+   "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3",
+   "description": "Learn Neural Networks from Scratch in Python",
+   "image": "https://i.ytimg.com/vi/Wo5dMEP_BbI/hqdefault.jpg",
+   "tags": [
+       "Python",
+       "Deep Learning",
+       "Neural Networks",
+       "Basics"
+   ]
+ },
+ {
+   "id": 19,
+   "name": "Neural Networks from Scratch in Python",
+   "instructor": "sentdex",
+   "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3",
+   "description": "Learn Neural Networks from Scratch in Python",
+   "image": "https://i.ytimg.com/vi/Wo5dMEP_BbI/hqdefault.jpg",
+   "tags": [
+       "Python",
+       "Deep Learning",
+       "Neural Networks",
+       "Basics"
+   ]
+ },
+ {
+   "id": 19,
+   "name": "C# Tutorials",
+   "instructor": "Dani Krossing",
+   "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhxD9HhtpuZV22KxEJAZ55X-",
+   "description": "Learn C#",
+   "image": "https://i.ytimg.com/vi/HB1aPYPPJ24/hqdefault.jpg",
+   "tags": [
+       "C#",
+       "Programming",
+       "Basics"
+   ]
+ },
+ {
+   "id": 20,
+   "name": "jQuery Tutorials",
+   "instructor": "Dani Krossing",
+   "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n",
+   "description": "Learn jQuery",
+   "image": "https://i.ytimg.com/vi/BaIgTKj1iCQ/hqdefault.jpg",
+   "tags": [
+       "javascript",
+       "Web",
+       "Basics"
+   ]
+ },
+ {
+   "id": 21,
+   "name": "AJAX Tutorials",
+   "instructor": "Dani Krossing",
+   "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhyeIDc3EA4XGsI9HoWLc6nF",
+   "description": "Learn AJAX",
+   "image": "https://i.ytimg.com/vi/tNKD0kfel6o/hqdefault.jpg",
+   "tags": [
+       "javascript",
+       "Web",
+       "Advanced"
+   ]
+ },
+ {
+   "id": 21,
+   "name": "Learning Flask",
+   "instructor": "Julian Nash",
+   "url": "https://www.youtube.com/playlist?list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L",
+   "description": "Learn Flask",
+   "image": "https://i.ytimg.com/vi/BUmUV8YOzgM/hqdefault.jpg",
+   "tags": [
+       "Flask",
+       "Web",
+       "Basics",
+       "Python"
+   ]
+ },
+ {
+   "id": 22,
+   "name": "GraphQL With React & Apollo",
+   "instructor": "Traversy Media",
+   "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbZrjw48EXLdM4dsOhURCLZx",
+   "description": "Learn how to use GraphQL With React & Apollo",
+   "image": "https://i.ytimg.com/vi/SEMTj8w04Z8/hqdefault.jpg",
+   "tags": [
+       "react js",
+       "Web",
+       "Advanced",
+       "GraphQL"
+   ]
+ }
 ]
