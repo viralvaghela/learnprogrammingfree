@@ -109,5 +109,23 @@
             "Animation",
             "Android development"
         ]
+    },
+     {
+        "id": 10,
+        "name": "Android Basics: User Interface",
+        "instructor": "Katherine Kuan, Kunal Chawla",
+        "url": "https://www.udacity.com/course/android-basics-user-interface--ud834",
+        "description": "You will have learn how to build an app’s layout from scratch on Udacity collaboration with Google",
+        "image": "https://cdn.ndtv.com/tech/images/gadgets/udacity_google_android_nanodegree_scrsht.jpg?output-quality=80&output-format=webp",
+        "tags": [
+            "Android",
+            "Udacity",
+            "Google",
+            "Basics",
+            "User Interface",
+            "Java",
+            "Free Course",
+            "Android development"
+        ]
     }
 ]
