@@ -355,6 +355,48 @@
             "C",
             "Programming",
             "freeCodeCamp.org",
+            "Beginner"
+        ]
+    },
+    {
+          "id": 27,
+          "name": "Build a Web App with React",
+          "instructor": "Glitch Team",
+          "url": "https://blog.glitch.com/post/react-starter-kit",
+          "description": "A free, 5-part video course with interactive code examples that will help you learn React.",
+          "image": "https://blog.glitch.com/assets/glimmer_logo.svg",
+          "tags": [
+              "React",
+              "Programming",
+              "Glimmer",
+              "Beginner"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Learn React - React-101",
+        "instructor": "codecademy.com",
+        "url": "https://www.codecademy.com/learn/react-101",
+        "description": "Build powerful interactive applications with React, a popular JavaScript library.",
+        "image": "https://wptavern.com/wp-content/uploads/2016/09/reactjs.png",
+        "tags": [
+            "React",
+            "Programming",
+            "codecademy",
+            "Beginner"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "React Tutorial for Beginners [React js]",
+        "instructor": "Moshfegh Hamedani",
+        "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+        "description": "React Tutorial - Learn to build fast web apps with React (React js) from scratch.",
+        "image": "https://i.ytimg.com/vi/Ke90Tje7VS0/sddefault.jpg",
+        "tags": [
+            "React",
+            "Programming",
+            "youtube",
             "Beginner"         
         ]
     }
