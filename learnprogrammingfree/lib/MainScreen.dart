@@ -1,10 +1,12 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:flutter/rendering.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:learnprogrammingfree/Models/Materials_Data.dart';
+import 'package:learnprogrammingfree/utils/searchHelper.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MainScreen extends StatefulWidget {
@@ -13,10 +15,12 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  List data;
+
   Future<List<MaterialData>> fetchRecord() async {
     var response = await http
         .get("http://learnprogrammingfree.codingboy.in/resources/data.json");
-
+    data = jsonDecode(response.body);
     if (response.statusCode == 200) {
       final items = json.decode(response.body).cast<Map<String, dynamic>>();
       List<MaterialData> records = items.map<MaterialData>((json) {
@@ -67,21 +71,20 @@ class _MainScreenState extends State<MainScreen> {
                         Text(
                           "Learn\nProgramming",
                           style: TextStyle(color: Colors.black87, fontSize: 38, fontWeight: FontWeight.w900),),
-                        Container(
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(35), color: Colors.white),
-                          alignment: Alignment.center,
-                          margin: EdgeInsets.only(top: 25),
-                          child: TextField(
-                            decoration: InputDecoration(
-                              hintText: "Search",
-                                border: InputBorder.none,
-                                alignLabelWithHint: true,
-                              contentPadding: EdgeInsets.all(10),suffixIcon: Icon(Icons.search),
-                            ),
-                            onSubmitted: (value) {
-                              //showSearch(context: context, delegate: Search(data));
-                            },
+                        GestureDetector(
+                          child: Container(
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(35), color: Colors.white),
+                            alignment: Alignment.center,height: 50,
+                            margin: EdgeInsets.only(top: 25),
+                            child: Padding(
+                              padding: const EdgeInsets.all(15.0),
+                              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [Text("Search", style: TextStyle(fontWeight: FontWeight.w700, color: Colors.black54),),Icon(Icons.search, color: Colors.grey,),],),
+                            )
+                            // FlatButton.icon(onPressed: () => showSearch(context: context, delegate: Search(data)),
+                            //     icon: Icon(Icons.search), label: Text("Search"))
                           ),
+                          onTap: () => showSearch(context: context, delegate: Search(data)),
                         ),
                       ],
                     ),
@@ -180,9 +183,9 @@ class _MainScreenState extends State<MainScreen> {
 
 
   Widget getTags(list) {
-    print(list);
+    //print(list);
     List tagsList = list;
-    print(tagsList[0]);
+    //print(tagsList[0]);
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Wrap(
