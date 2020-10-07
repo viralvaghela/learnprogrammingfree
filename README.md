@@ -80,4 +80,4 @@ Be sure to include as much information including screenshots, text output, and b
 ##### Made with ♥ by <a href="https://github.com/viralvaghela">viralvaghela</a>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/viralvaghela)
-
+<a href="https://www.buymeacoffee.com/codingboy" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height:30 px !important;width: 90px !important;" ></a>
