@@ -16,7 +16,7 @@
 
 <body class="bg-light">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
             <input id="search" type="text" name="search" placeholder="Search..">
             <a href="https://github.com/viralvaghela/learnprogrammingfree">
             <svg class="svg-icon" viewBox="0 0 20 20">
@@ -26,7 +26,7 @@
             </a>
             
     </nav>
-    <div id="myData" class='container' style="margin:5px;">
+    <div id="myData" class='container'>
 
     </div>
     <script>
@@ -81,7 +81,7 @@
             for (var i = 0; i < data.length; i++) {
                 var card = document.createElement("div");
                 card.setAttribute('class', 'card');
-                card.setAttribute('style', 'width: 18rem; margin:15px; ');
+                card.setAttribute('style', 'width: 20rem;');
 
                 if (data[i].image != null) {
                     card.innerHTML = `<img class="card-img-top" src="` + data[i].image + `">`
