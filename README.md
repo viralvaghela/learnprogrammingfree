@@ -12,7 +12,7 @@ You can find free reasources to learn programming
 
 ## Supported Platforms
 
-- Android (will publish on google play store very soon)
+- [Android - Download from google Play Store](https://play.google.com/store/apps/details?id=in.codingboy.learnprogrammingfree2)
 - iOS
 - Web [http://learnprogrammingfree.codingboy.in/](http://learnprogrammingfree.codingboy.in/)
 
