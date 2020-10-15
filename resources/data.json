@@ -399,5 +399,20 @@
             "youtube",
             "Beginner"         
         ]
+    },
+    {
+        "id": 27,
+        "name": "Learn Ruby",
+        "instructor": "Codecademy",
+        "url": "https://www.codecademy.com/learn/learn-ruby",
+        "description": "Learn to program in Ruby, a ﬂexible and beginner-friendly language used to create sites like Codecademy.",
+        "image": "http://learnprogrammingfree.codingboy.in/resources/images/ruby.png",
+        "tags": [
+            "Basics",
+            "Beginner",
+            "Free Course",
+            "Codecademy",
+            "Ruby"
+        ]
     }
 ]
