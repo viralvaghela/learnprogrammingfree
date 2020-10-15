@@ -71,7 +71,7 @@
             "web"
         ]
     },
- 
+
     {
         "id": 7,
         "name": "Learn X in Y minutes, Where X=Python",
@@ -128,7 +128,7 @@
             "Android development"
         ]
     },
-         
+
  {
        "id": 11,
        "name": "Android Basics: User Interface",
@@ -397,7 +397,31 @@
             "React",
             "Programming",
             "youtube",
-            "Beginner"         
+            "Beginner"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Machine Learning Crash Course",
+        "instructor": "Google",
+        "url": "https://developers.google.com/machine-learning/crash-course",
+        "description": "Google's fast-paced, practical introduction to machine learning",
+        "tags": [
+            "Machine Learning",
+            "TensorFlow",
+            "Google"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Machine Learning Guides",
+        "instructor": "Google",
+        "url": "https://developers.google.com/machine-learning/guides",
+        "description": "Simple step-by-step walkthroughs to solve common machine learning problems using best practices.",
+        "tags": [
+            "Machine Learning",
+            "Guides",
+            "Google"
         ]
     }
 ]
