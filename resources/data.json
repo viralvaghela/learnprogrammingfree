@@ -417,10 +417,10 @@
         "name": "Machine Learning Guides",
         "instructor": "Google",
         "url": "https://developers.google.com/machine-learning/guides",
-        "description": "imple step-by-step walkthroughs to solve common machine learning problems using best practices.",
+        "description": "Simple step-by-step walkthroughs to solve common machine learning problems using best practices.",
         "tags": [
             "Machine Learning",
-            "TensorFlow",
+            "Guides",
             "Google"
         ]
     }
