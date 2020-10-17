@@ -1,11 +1,22 @@
 [
-
   {
     "name": "Learn HTML5 and CSS3 From Scratch - Full Course",
     "instructor": "free code camp",
     "url": "https://www.youtube.com/watch?v=mU6anWqZJcc",
     "description": "In this course we will cover both languages HTML and CSS from the scratch and by the end of the course you will be creating your own projects.",
     "image": "https://i.ytimg.com/vi/mU6anWqZJcc/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLARovqWCWd7TZf52ByEhQ5LXDX7Gw",
+    "tags": [
+      "html",
+      "css",
+      "web"
+    ]
+  },
+  {
+    "name": "CSS3 Animation & Transitions Crash Course",
+    "instructor": "Traversy Media\n",
+    "url": "https://www.youtube.com/watch?v=zHUpx90NerM",
+    "description": "This is a beginner friendly crash course on CSS animation using keyframes as well as CSS transitions. We will do a little experimenting and we will build a small animated landing page project.",
+    "image": "https://i.ytimg.com/an_webp/zHUpx90NerM/mqdefault_6s.webp?du=3000&sqp=CKKbq_wF&rs=AOn4CLB2etCCR1EVKW73KJqqWqYw4uU4QQ",
     "tags": [
       "html",
       "css",

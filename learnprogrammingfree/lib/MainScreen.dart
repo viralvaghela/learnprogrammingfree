@@ -144,7 +144,7 @@ class _MainScreenState extends State<MainScreen> {
                     width: double.infinity,
                     height: height * 0.6 - 30,
                     child: FutureBuilder<List<MaterialData>>(
-                        future: fetchWebdevRecord(),
+                        future: fetchRecord(),
                         builder: (context, snapshot) {
                           if (!snapshot.hasData)
                             return Center(
