@@ -152,9 +152,9 @@ class Search extends SearchDelegate {
 
 
   Widget getTags(list) {
-    print(list);
+    // print(list);
     List tagsList = list;
-    print(tagsList[0]);
+    // print(tagsList[0]);
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Wrap(

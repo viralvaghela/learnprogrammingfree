@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:learnprogrammingfree/MainScreen.dart';
 
-void main(){
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
-  SystemChrome.setEnabledSystemUIOverlays([]);///remove bottom navigation bar
+  SystemChrome.setEnabledSystemUIOverlays([]);
+
+  ///remove bottom navigation bar
   runApp(MyApp());
 }
 
