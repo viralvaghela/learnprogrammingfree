@@ -35,7 +35,7 @@ class _MainScreenState extends State<MainScreen> {
 
   Future<List<MaterialData>> fetchWebdevRecord() async {
     var response = await http
-        .get("http://learnprogrammingfree.codingboy.in/resources/data.json");
+        .get("http://learnprogrammingfree.codingboy.in/resources/webdevdata.json");
     data = jsonDecode(response.body);
     if (response.statusCode == 200) {
       final items = json.decode(response.body).cast<Map<String, dynamic>>();
