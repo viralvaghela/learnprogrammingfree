@@ -34,8 +34,8 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   Future<List<MaterialData>> fetchWebdevRecord() async {
-    var response = await http
-        .get("http://learnprogrammingfree.codingboy.in/resources/webdevdata.json");
+    var response = await http.get(
+        "http://learnprogrammingfree.codingboy.in/resources/webdevdata.json");
     data = jsonDecode(response.body);
     if (response.statusCode == 200) {
       final items = json.decode(response.body).cast<Map<String, dynamic>>();
@@ -55,7 +55,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          height: height * 1.05,
+          height: height * 1,
           child: Container(
             child: SingleChildScrollView(
               child: Column(
@@ -124,6 +124,21 @@ class _MainScreenState extends State<MainScreen> {
                         ],
                       ),
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 30, bottom: 10),
+                        child: Text(
+                          "All : ",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                    ],
                   ),
                   Container(
                     width: double.infinity,
@@ -250,6 +265,147 @@ class _MainScreenState extends State<MainScreen> {
                                 );
                         }),
                   ),
+                  Row(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 30, top: 10, bottom: 10),
+                        child: Text(
+                          "Web development : ",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    width: double.infinity,
+                    height: height * 0.6 - 30,
+                    child: FutureBuilder<List<MaterialData>>(
+                        future: fetchWebdevRecord(),
+                        builder: (context, snapshot) {
+                          if (!snapshot.hasData)
+                            return Center(
+                                child:
+                                    Center(child: CircularProgressIndicator()));
+
+                          return snapshot.data.length > 0
+                              ? ListView(
+                                  scrollDirection: Axis.horizontal,
+                                  children: snapshot.data.map((item) {
+                                    return Container(
+                                        color: Colors.white,
+                                        padding: EdgeInsets.only(
+                                            top: 05, left: 25, right: 25),
+                                        width: width,
+                                        child: Card(
+                                          elevation: 2,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(25.0),
+                                          ),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Wrap(
+                                                children: [
+                                                  Padding(
+                                                    padding: EdgeInsets.only(
+                                                        top: 10, bottom: 10),
+                                                    child: Text(
+                                                      "${item.name}",
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: TextStyle(
+                                                          fontSize: 20,
+                                                          color:
+                                                              Theme.of(context)
+                                                                  .primaryColor,
+                                                          fontWeight:
+                                                              FontWeight.bold),
+                                                      overflow:
+                                                          TextOverflow.clip,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.all(15.0),
+                                                child: Image.network(
+                                                  item.image,
+                                                  fit: BoxFit.contain,
+                                                  height: height * 0.2,
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.fromLTRB(
+                                                    20, 10, 20, 10),
+                                                child: Text(
+                                                    "${item.description}",
+                                                    style: TextStyle(),
+                                                    overflow:
+                                                        TextOverflow.ellipsis),
+                                              ),
+                                              getTags(item.tags),
+                                              GestureDetector(
+                                                onTap: () =>
+                                                    launchUrl(item.url),
+                                                child: Container(
+                                                  height: 50,
+                                                  decoration: BoxDecoration(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              24),
+                                                      color: Colors.blueAccent
+                                                          .withOpacity(0.2)),
+                                                  child: Center(
+                                                      child: Text("Explore")),
+                                                  width: 120,
+                                                ),
+                                              ),
+                                              Padding(
+                                                  padding: EdgeInsets.all(5))
+                                              /* Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.end,
+                                                children: [
+                                                  Container(
+                                                    decoration: BoxDecoration(
+                                                        borderRadius:
+                                                            BorderRadius.only(
+                                                          topLeft:
+                                                              Radius.circular(
+                                                                  25.0),
+                                                          bottomRight:
+                                                              Radius.circular(
+                                                                  25.0),
+                                                        ),
+                                                        color: Colors.blueAccent
+                                                            .withOpacity(0.2)),
+                                                    child: IconButton(
+                                                        icon: Icon(Icons.link),
+                                                        onPressed: () {
+                                                          launchUrl(item.url);
+                                                        }),
+                                                    width: 120,
+                                                  )
+                                                ],
+                                              )*/
+                                            ],
+                                          ),
+                                        ));
+                                  }).toList(),
+                                )
+                              : Center(
+                                  child: CircularProgressIndicator(),
+                                );
+                        }),
+                  ),
+                  Padding(padding: EdgeInsets.only(top: 50))
                 ],
               ),
             ),
