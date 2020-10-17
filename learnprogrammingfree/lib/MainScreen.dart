@@ -33,6 +33,21 @@ class _MainScreenState extends State<MainScreen> {
     }
   }
 
+  Future<List<MaterialData>> fetchWebdevRecord() async {
+    var response = await http
+        .get("http://learnprogrammingfree.codingboy.in/resources/data.json");
+    data = jsonDecode(response.body);
+    if (response.statusCode == 200) {
+      final items = json.decode(response.body).cast<Map<String, dynamic>>();
+      List<MaterialData> records = items.map<MaterialData>((json) {
+        return MaterialData.fromJson(json);
+      }).toList();
+      return records;
+    } else {
+      throw Exception('Failed to load data from Server.');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -41,22 +56,7 @@ class _MainScreenState extends State<MainScreen> {
       body: SingleChildScrollView(
         child: Container(
           height: height * 1.05,
-          /*  decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage(
-                  "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v311-ning-03-christmaspatterns_2.jpg?bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&q=80&usm=15&vib=3&w=1300&s=c2bd81818b67372ded46e12811b15d9c"),
-              fit: BoxFit.cover,
-              alignment: AlignmentDirectional.topCenter,
-            ),
-          ),*/
           child: Container(
-            // color: Colors.blueGrey,
-            /* decoration: BoxDecoration(
-                gradient: new LinearGradient(
-              begin: Alignment.center,
-              end: Alignment.bottomCenter,
-              colors: [Colors.transparent, Colors.blueGrey.withOpacity(0.3)],
-            )),*/
             child: SingleChildScrollView(
               child: Column(
                 children: [
@@ -127,9 +127,9 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                   Container(
                     width: double.infinity,
-                    height: height * 0.6 - 20,
+                    height: height * 0.6 - 30,
                     child: FutureBuilder<List<MaterialData>>(
-                        future: fetchRecord(),
+                        future: fetchWebdevRecord(),
                         builder: (context, snapshot) {
                           if (!snapshot.hasData)
                             return Center(
@@ -138,11 +138,10 @@ class _MainScreenState extends State<MainScreen> {
 
                           return snapshot.data.length > 0
                               ? ListView(
-
                                   scrollDirection: Axis.horizontal,
                                   children: snapshot.data.map((item) {
                                     return Container(
-                                      color: Colors.white,
+                                        color: Colors.white,
                                         padding: EdgeInsets.only(
                                             top: 05, left: 25, right: 25),
                                         width: width,
@@ -271,12 +270,12 @@ class _MainScreenState extends State<MainScreen> {
         children: tagsList.map(
           (i) {
             return Padding(
-              padding: const EdgeInsets.all(3.0),
+              padding: const EdgeInsets.all(2.0),
               child: Chip(
-                backgroundColor: Colors.deepPurpleAccent,
+                backgroundColor: Colors.blueAccent,
                 labelPadding: EdgeInsets.symmetric(horizontal: 15),
                 label: Text(i, style: TextStyle(color: Colors.white)),
-                padding: EdgeInsets.all(5),
+                padding: EdgeInsets.all(3),
               ),
             );
           },
