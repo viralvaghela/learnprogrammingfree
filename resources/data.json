@@ -408,5 +408,18 @@
       "R Studio",
       "Beginner"
     ]
+  },
+  
+{
+    "name": "Machine Learning Course",
+        "instructor": "The Net Ninja",
+        "url": "https://www.youtube.com/watch?v=GwIo3gDZCVQ",
+        "description": "Machine Learning Full Course - Learn Machine Learning 10 Hours | Machine Learning Tutorial | Edureka",
+        "image": "https://www.edureka.co/blog/wp-content/uploads/2019/04/Introduction-To-Machine-Learning-1.jpg",
+        "tags": [
+            "MachineLearning",
+            "Edureka",
+            "youtube"
+        ]
   }
 ]
