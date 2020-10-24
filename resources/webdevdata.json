@@ -1,0 +1,210 @@
+[
+  {
+    "name": "Learn HTML5 and CSS3 From Scratch - Full Course",
+    "instructor": "free code camp",
+    "url": "https://www.youtube.com/watch?v=mU6anWqZJcc",
+    "description": "In this course we will cover both languages HTML and CSS from the scratch and by the end of the course you will be creating your own projects.",
+    "image": "https://i.ytimg.com/vi/mU6anWqZJcc/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLARovqWCWd7TZf52ByEhQ5LXDX7Gw",
+    "tags": [
+      "html",
+      "css",
+      "web"
+    ]
+  },
+  {
+    "name": "CSS3 Animation & Transitions Crash Course",
+    "instructor": "Traversy Media\n",
+    "url": "https://www.youtube.com/watch?v=zHUpx90NerM",
+    "description": "This is a beginner friendly crash course on CSS animation using keyframes as well as CSS transitions. We will do a little experimenting and we will build a small animated landing page project.",
+    "image": "https://i.ytimg.com/an_webp/zHUpx90NerM/mqdefault_6s.webp?du=3000&sqp=CKKbq_wF&rs=AOn4CLB2etCCR1EVKW73KJqqWqYw4uU4QQ",
+    "tags": [
+      "html",
+      "css",
+      "web"
+    ]
+  },
+  {
+    "name": "Node JS Tutorial",
+    "instructor": "NetNinja",
+    "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+    "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/node.png",
+    "tags": [
+      "nodejs",
+      "javascript",
+      "web"
+    ]
+  },
+  {
+    "name": "Learn Python — Full Course for Beginners by FreeCodeCamp",
+    "instructor": "Mike Dane",
+    "url": "https://www.youtube.com/watch?v=rfscVS0vtbw&feature=emb_title",
+    "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the video and you'll be a python programmer in no time!",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/python.png",
+    "tags": [
+      "Python",
+      "Python3"
+    ]
+  },
+  {
+    "name": "React JS Frontend Web Development for Beginners",
+    "instructor": "Ryan Dhungel",
+    "url": "https://www.udemy.com/course/react-tutorial/",
+    "description": "Learn React JS along with Modern JavaScript from absolute scratch. This course is a getting started guide for beginners.",
+    "image": "https://img-b.udemycdn.com/course/240x135/2222856_2303.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Basics",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "React.js, quick start",
+    "instructor": "Sepehr Esmaeili",
+    "url": "https://www.udemy.com/course/reactjs-quick-start/",
+    "description": "Up and run with React.js quickly.",
+    "image": "https://img-b.udemycdn.com/course/240x135/2075934_7459.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Basics",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "Secure Your ReactJs Applications With Auth0",
+    "instructor": "Joel Lord",
+    "url": "https://www.udemy.com/course/secure-your-reactjs-applications-with-auth0/",
+    "description": "Easily Add Authentication To Your ReactJS Application.",
+    "image": "https://img-b.udemycdn.com/course/240x135/1545338_d22f_2.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Advanced",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "React.js Tic Tac Toe Game in 30 Minutes",
+    "instructor": "Bassir Jafarzadeh",
+    "url": "https://www.udemy.com/course/reactjs-tic-tac-toe-game-in-30-minutes/",
+    "description": "Be master in react development and learn component decomposition in action.",
+    "image": "https://img-b.udemycdn.com/course/240x135/2423698_fa07_2.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Games",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "Django Web Development with Python",
+    "instructor": "sentdex",
+    "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDe9nqlirjacLkBYdgc2inh3",
+    "description": "Learn Django Web Development with Python",
+    "image": "https://i.ytimg.com/vi/yD0_1DPmfKM/hqdefault.jpg",
+    "tags": [
+      "Python",
+      "Web",
+      "Django"
+    ]
+  },
+  {
+    "name": "jQuery Tutorials",
+    "instructor": "Dani Krossing",
+    "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n",
+    "description": "Learn jQuery",
+    "image": "https://i.ytimg.com/vi/BaIgTKj1iCQ/hqdefault.jpg",
+    "tags": [
+      "javascript",
+      "Web",
+      "Basics"
+    ]
+  },
+  {
+    "name": "AJAX Tutorials",
+    "instructor": "Dani Krossing",
+    "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhyeIDc3EA4XGsI9HoWLc6nF",
+    "description": "Learn AJAX",
+    "image": "https://i.ytimg.com/vi/tNKD0kfel6o/hqdefault.jpg",
+    "tags": [
+      "javascript",
+      "Web",
+      "Advanced"
+    ]
+  },
+  {
+    "name": "Learning Flask",
+    "instructor": "Julian Nash",
+    "url": "https://www.youtube.com/playlist?list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L",
+    "description": "Learn Flask",
+    "image": "https://i.ytimg.com/vi/BUmUV8YOzgM/hqdefault.jpg",
+    "tags": [
+      "Flask",
+      "Web",
+      "Basics",
+      "Python"
+    ]
+  },
+  {
+    "name": "GraphQL With React & Apollo",
+    "instructor": "Traversy Media",
+    "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbZrjw48EXLdM4dsOhURCLZx",
+    "description": "Learn how to use GraphQL With React & Apollo",
+    "image": "https://i.ytimg.com/vi/SEMTj8w04Z8/hqdefault.jpg",
+    "tags": [
+      "react js",
+      "Web",
+      "Advanced",
+      "GraphQL"
+    ]
+  },
+  {
+    "name": "Build a Web App with React",
+    "instructor": "Glitch Team",
+    "url": "https://blog.glitch.com/post/react-starter-kit",
+    "description": "A free, 5-part video course with interactive code examples that will help you learn React.",
+    "image": "https://blog.glitch.com/assets/glimmer_logo.svg",
+    "tags": [
+      "React",
+      "Programming",
+      "Glimmer",
+      "Beginner"
+    ]
+  },
+  {
+    "name": "Learn React - React-101",
+    "instructor": "codecademy.com",
+    "url": "https://www.codecademy.com/learn/react-101",
+    "description": "Build powerful interactive applications with React, a popular JavaScript library.",
+    "image": "https://wptavern.com/wp-content/uploads/2016/09/reactjs.png",
+    "tags": [
+      "React",
+      "Programming",
+      "codecademy",
+      "Beginner"
+    ]
+  },
+  {
+    "name": "React Tutorial for Beginners [React js]",
+    "instructor": "Moshfegh Hamedani",
+    "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "description": "React Tutorial - Learn to build fast web apps with React (React js) from scratch.",
+    "image": "https://i.ytimg.com/vi/Ke90Tje7VS0/sddefault.jpg",
+    "tags": [
+      "React",
+      "Programming",
+      "youtube",
+      "Beginner"
+    ]
+  }
+]

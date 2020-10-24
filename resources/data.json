@@ -1,16 +1,375 @@
-[{
-        "id": 1,
-        "name": "Node JS Tutorial",
-        "instructor": "NetNinja",
-        "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
-        "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
-        "image": "http://learnprogrammingfree.codingboy.in/resources/images/node.png",
-        "tags": [
-            "nodejs",
-            "javascript",
-            "web"
-        ]
-    },
+[
+  {
+    "name": "Node JS Tutorial",
+    "instructor": "NetNinja",
+    "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp",
+    "description": "A step by step walk-through what Node JS is, and how it all works. We'll also be creating a Node JS application from scratch using express, and hook it up to MongoDB - a noSQL database perfect for using with Node.",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/node.png",
+    "tags": [
+      "nodejs",
+      "javascript",
+      "web"
+    ]
+  },
+  {
+    "name": "Flutter Complete Beginner Course",
+    "instructor": "Mtechviral",
+    "url": "https://www.youtube.com/watch?v=6wQwnTIBD1Y",
+    "description": "Flutter complete beginner course by Mtechvirak",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
+    "tags": [
+      "flutter",
+      "mobile development"
+    ]
+  },
+  {
+    "name": "Java Tutorial for Beginners | Full Course",
+    "instructor": "Telusko",
+    "url": "https://www.youtube.com/watch?v=8cm1x4bC610&ab_channel=Telusko",
+    "description": "Full course in Java for Beginners",
+    "image": "https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
+    "tags": [
+      "java",
+      "programming"
+    ]
+  },
+  {
+    "name": "Java Tutorial for Complete Beginners",
+    "instructor": "Udemy",
+    "url": "https://www.udemy.com/course/java-tutorial/",
+    "description": "Learn to program using the Java programming language",
+    "image": "https://cdn.vox-cdn.com/thumbor/VoXJ8IaxCj5_U-366JhtUHLkdQ0=/0x0:640x427/1400x1050/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/1087137/java_logo_640.jpg",
+    "tags": [
+      "java",
+      "programming"
+    ]
+  },
+  {
+    "name": "Learn Python — Full Course for Beginners by FreeCodeCamp",
+    "instructor": "Mike Dane",
+    "url": "https://www.youtube.com/watch?v=rfscVS0vtbw&feature=emb_title",
+    "description": "This course will give you a full introduction into all of the core concepts in python. Follow along with the video and you'll be a python programmer in no time!",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/python.png",
+    "tags": [
+      "Python",
+      "Python3"
+    ]
+  },
+  {
+    "name": "Derak Banas's Playlist - JAVA",
+    "instructor": "Derak Banas",
+    "url": "https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19",
+    "description": "A complete beginner course for JAVA by Derak Banas's Playlist",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/java.jpg",
+    "tags": [
+      "Java",
+      "web"
+    ]
+  },
+  {
+    "name": "Learn X in Y minutes, Where X=Python",
+    "instructor": "Louie Dinh",
+    "url": "https://learnxinyminutes.com/docs/python/",
+    "description": "For those who have already learnt a programming language, this short document will catch you up to speed quickly with Python's syntax",
+    "image": "https://i.pinimg.com/originals/19/f2/4c/19f24c973aa8270e17550676c55f4869.png",
+    "tags": [
+      "Python",
+      "Python3"
+    ]
+  },
+  {
+    "name": "Flutter & Firebase App Build Playlist",
+    "instructor": "The Net Ninja",
+    "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC",
+    "description": "Create Flutter app from scratch, using Firebase Firestore (a real-time database) and Firebase authentication.",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
+    "tags": [
+      "Flutter",
+      "Firebase",
+      "Android development"
+    ]
+  },
+  {
+    "name": "Flutter Animation Playlist",
+    "instructor": "The Net Ninja",
+    "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gP1qg8yj-Jokef29VRCLt1",
+    "description": "Learn all about Flutter Animations, from start to finish, to make your apps slicker & smoother.",
+    "image": "http://learnprogrammingfree.codingboy.in/resources/images/flutter.png",
+    "tags": [
+      "Flutter",
+      "Animation",
+      "Android development"
+    ]
+  },
+  {
+    "name": "Android Basics: User Interface",
+    "instructor": "Katherine Kuan, Kunal Chawla",
+    "url": "https://www.udacity.com/course/android-basics-user-interface--ud834",
+    "description": "You will have learn how to build an app’s layout from scratch on Udacity collaboration with Google",
+    "image": "https://cdn.ndtv.com/tech/images/gadgets/udacity_google_android_nanodegree_scrsht.jpg?output-quality=80&output-format=webp",
+    "tags": [
+      "Android",
+      "Udacity",
+      "Google",
+      "Basics",
+      "User Interface",
+      "Java",
+      "Free Course",
+      "Android development"
+    ]
+  },
+  {
+    "name": "Android Basics: User Interface",
+    "instructor": "ProgramMe Programming",
+    "url": "https://www.udemy.com/course/learn-android-application-development-y/",
+    "description": "A beginner course on Android Application development",
+    "image": "https://img-b.udemycdn.com/course/240x135/1325686_e03b_3.jpg",
+    "tags": [
+      "Android",
+      "Udemy",
+      "Basics",
+      "User Interface",
+      "Java",
+      "Free Course",
+      "Android development"
+    ]
+  },
+  {
+    "name": "React JS Frontend Web Development for Beginners",
+    "instructor": "Ryan Dhungel",
+    "url": "https://www.udemy.com/course/react-tutorial/",
+    "description": "Learn React JS along with Modern JavaScript from absolute scratch. This course is a getting started guide for beginners.",
+    "image": "https://img-b.udemycdn.com/course/240x135/2222856_2303.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Basics",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "React.js, quick start",
+    "instructor": "Sepehr Esmaeili",
+    "url": "https://www.udemy.com/course/reactjs-quick-start/",
+    "description": "Up and run with React.js quickly.",
+    "image": "https://img-b.udemycdn.com/course/240x135/2075934_7459.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Basics",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "Secure Your ReactJs Applications With Auth0",
+    "instructor": "Joel Lord",
+    "url": "https://www.udemy.com/course/secure-your-reactjs-applications-with-auth0/",
+    "description": "Easily Add Authentication To Your ReactJS Application.",
+    "image": "https://img-b.udemycdn.com/course/240x135/1545338_d22f_2.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Advanced",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "React.js Tic Tac Toe Game in 30 Minutes",
+    "instructor": "Bassir Jafarzadeh",
+    "url": "https://www.udemy.com/course/reactjs-tic-tac-toe-game-in-30-minutes/",
+    "description": "Be master in react development and learn component decomposition in action.",
+    "image": "https://img-b.udemycdn.com/course/240x135/2423698_fa07_2.jpg",
+    "tags": [
+      "Web",
+      "Udemy",
+      "Games",
+      "javascript",
+      "react js",
+      "Free Course"
+    ]
+  },
+  {
+    "name": "Machine Learning with Python",
+    "instructor": "sentdex",
+    "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v",
+    "description": "Learn Machine Learning with Python",
+    "image": "https://i.ytimg.com/vi/OGxgnH8y2NM/hqdefault.jpg",
+    "tags": [
+      "Python",
+      "Machine Learning"
+    ]
+  },
+  {
+    "name": "Django Web Development with Python",
+    "instructor": "sentdex",
+    "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDe9nqlirjacLkBYdgc2inh3",
+    "description": "Learn Django Web Development with Python",
+    "image": "https://i.ytimg.com/vi/yD0_1DPmfKM/hqdefault.jpg",
+    "tags": [
+      "Python",
+      "Web",
+      "Django"
+    ]
+  },
+  {
+    "name": "Neural Networks from Scratch in Python",
+    "instructor": "sentdex",
+    "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3",
+    "description": "Learn Neural Networks from Scratch in Python",
+    "image": "https://i.ytimg.com/vi/Wo5dMEP_BbI/hqdefault.jpg",
+    "tags": [
+      "Python",
+      "Deep Learning",
+      "Neural Networks",
+      "Basics"
+    ]
+  },
+  {
+    "name": "C# Tutorials",
+    "instructor": "Dani Krossing",
+    "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhxD9HhtpuZV22KxEJAZ55X-",
+    "description": "Learn C#",
+    "image": "https://i.ytimg.com/vi/HB1aPYPPJ24/hqdefault.jpg",
+    "tags": [
+      "C#",
+      "Programming",
+      "Basics"
+    ]
+  },
+  {
+    "name": "jQuery Tutorials",
+    "instructor": "Dani Krossing",
+    "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n",
+    "description": "Learn jQuery",
+    "image": "https://i.ytimg.com/vi/BaIgTKj1iCQ/hqdefault.jpg",
+    "tags": [
+      "javascript",
+      "Web",
+      "Basics"
+    ]
+  },
+  {
+    "name": "AJAX Tutorials",
+    "instructor": "Dani Krossing",
+    "url": "https://www.youtube.com/playlist?list=PL0eyrZgxdwhyeIDc3EA4XGsI9HoWLc6nF",
+    "description": "Learn AJAX",
+    "image": "https://i.ytimg.com/vi/tNKD0kfel6o/hqdefault.jpg",
+    "tags": [
+      "javascript",
+      "Web",
+      "Advanced"
+    ]
+  },
+  {
+    "name": "Learning Flask",
+    "instructor": "Julian Nash",
+    "url": "https://www.youtube.com/playlist?list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L",
+    "description": "Learn Flask",
+    "image": "https://i.ytimg.com/vi/BUmUV8YOzgM/hqdefault.jpg",
+    "tags": [
+      "Flask",
+      "Web",
+      "Basics",
+      "Python"
+    ]
+  },
+  {
+    "name": "GraphQL With React & Apollo",
+    "instructor": "Traversy Media",
+    "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbZrjw48EXLdM4dsOhURCLZx",
+    "description": "Learn how to use GraphQL With React & Apollo",
+    "image": "https://i.ytimg.com/vi/SEMTj8w04Z8/hqdefault.jpg",
+    "tags": [
+      "react js",
+      "Web",
+      "Advanced",
+      "GraphQL"
+    ]
+  },
+  {
+    "name": "Machine Learning",
+    "instructor": "Andrew Ng",
+    "url": "https://www.coursera.org/learn/machine-learning",
+    "description": "This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition.",
+    "image": "https://s3.amazonaws.com/coursera/topics/ml/large-icon.png",
+    "tags": [
+      "Basics",
+      "Machine Learning",
+      "Free Course",
+      "Coursera"
+    ]
+  },
+  {
+    "name": "Deep Learning Specialization",
+    "instructor": "Andrew Ng",
+    "url": "https://www.coursera.org/specializations/deep-learning",
+    "description": "If you want to break into AI, this Specialization will help you do so. Deep Learning is one of the most highly sought after skills in tech. We will help you become good at Deep Learning.",
+    "image": "https://d15cw65ipctsrr.cloudfront.net/57/4be3fd8d16487ab9cfa7bba909b236/GreyLogoName1000x1000.png",
+    "tags": [
+      "Basics",
+      "Deep Learning",
+      "Free Course",
+      "Coursera"
+    ]
+  },
+  {
+    "name": "C Programming Tutorial for Beginners",
+    "instructor": "Mike Dane",
+    "url": "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+    "description": "An introductory course in the C programming language which gradually dives into the core concepts of C",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFNNKOV5hqbrtHahriK-tINSKI1VWCniGbQQ&usqp=CAU",
+    "tags": [
+      "C",
+      "Programming",
+      "freeCodeCamp.org",
+      "Beginner"
+    ]
+  },
+  {
+    "name": "Build a Web App with React",
+    "instructor": "Glitch Team",
+    "url": "https://blog.glitch.com/post/react-starter-kit",
+    "description": "A free, 5-part video course with interactive code examples that will help you learn React.",
+    "image": "https://blog.glitch.com/assets/glimmer_logo.svg",
+    "tags": [
+      "React",
+      "Programming",
+      "Glimmer",
+      "Beginner"
+    ]
+  },
+  {
+    "name": "Learn React - React-101",
+    "instructor": "codecademy.com",
+    "url": "https://www.codecademy.com/learn/react-101",
+    "description": "Build powerful interactive applications with React, a popular JavaScript library.",
+    "image": "https://wptavern.com/wp-content/uploads/2016/09/reactjs.png",
+    "tags": [
+      "React",
+      "Programming",
+      "codecademy",
+      "Beginner"
+    ]
+  },
+  {
+    "name": "React Tutorial for Beginners [React js]",
+    "instructor": "Moshfegh Hamedani",
+    "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "description": "React Tutorial - Learn to build fast web apps with React (React js) from scratch.",
+    "image": "https://i.ytimg.com/vi/Ke90Tje7VS0/sddefault.jpg",
+    "tags": [
+      "React",
+      "Programming",
+      "youtube",
+      "Beginner"
+    ]
+  },
     {
         "id": 2,
         "name": "Flutter Complete Beginner Course",
@@ -129,7 +488,7 @@
         ]
     },
      {
-        "id": 10,
+        "id": 11,
         "name": "Machine Learning Course",
         "instructor": "The Net Ninja",
         "url": "https://www.youtube.com/watch?v=GwIo3gDZCVQ",
@@ -141,4 +500,43 @@
             "youtube"
         ]
     }
+=======
+    "name": "CS50’s Introduction to Artificial Intelligence with Python",
+    "instructor": "David J. Malan, Brian Yu",
+    "url": "https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python",
+    "description": "CS50’s Introduction to Artificial Intelligence with Python explores the concepts and algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation. Through hands-on projects, students gain exposure to the theory behind graph search algorithms, classification, optimization, reinforcement learning, and other topics in artificial intelligence and machine learning as they incorporate them into their own Python programs. By course’s end, students emerge with experience in libraries for machine learning as well as knowledge of artificial intelligence principles that enable them to design intelligent systems of their own.",
+    "image": "https://prod-discovery.edx-cdn.org/media/course/image/3a31db71-de8f-45f1-ae65-11981ed9d680-31634d40b3bb.small.png",
+    "tags": [
+      "Artificial Intelligence",
+      "edX",
+      "Python",
+      "Introductory"
+    ]
+  },
+{
+    "name": "Machine Learning Crash Course with TensorFlow APIs",
+    "instructor": "Google",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "description": "A self-study guide for aspiring machine learning practitioners Machine Learning Crash Course features a series of lessons with video lectures, real-world case studies, and hands-on practice exercises.",
+    "image": "https://lh3.googleusercontent.com/EUoOV44hxiSJPRgfNq61h5JP2V5fE4zypmUVK3bCCw_XvthzRTTXNGn5cp9tYtuFZJUZHpxV2jCVy8gQ2yjC02SKs_JD0Cvj-sSIOg",
+    "tags": [
+      "Machine Learning",
+      "Google",
+      "Python",
+      "Beginner"
+    ]
+  },
+{
+    "name": "Big Data: Statistical Inference and Machine Learning",
+    "instructor": "Kerrie Mengersen",
+    "url": "https://www.futurelearn.com/courses/big-data-machine-learning",
+    "description": "This course equips you for working with these solutions by introducing you to selected statistical and machine learning techniques used for analysing large datasets and extracting information. We also expose you to three software packages so you can develop your coding skills by completing practical exercises.",
+    "image": "https://ugc.futurelearn.com/uploads/images/11/a6/11a66769-8ce3-4e77-8a28-4349d335ce51.svg",
+    "tags": [
+      "Machine Learning",
+      "Big Data",
+      "R Studio",
+      "Beginner"
+    ]
+  }
 ]

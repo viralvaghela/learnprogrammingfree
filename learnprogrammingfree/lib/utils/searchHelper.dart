@@ -8,7 +8,7 @@ class Search extends SearchDelegate {
 
   @override
   ThemeData appBarTheme(BuildContext context) {
-    var td = ThemeData(primaryColor: Colors.blue, hintColor: Colors.black);
+    var td = ThemeData(primaryColor: Colors.blue, hintColor: Colors.white,indicatorColor: Colors.white);
     // return super.appBarTheme(context);
     return td;
   }
@@ -37,7 +37,7 @@ class Search extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    return Container();
+    return buildSuggestions(context);
   }
 
   @override
@@ -83,6 +83,7 @@ class Search extends SearchDelegate {
               padding: EdgeInsets.all(10),
               child: Card(
                 elevation: 2,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0),),
                 child: Column(
                   children: [
                     Wrap(
@@ -123,14 +124,22 @@ class Search extends SearchDelegate {
                       ),
                     ),
                     getTags(item['tags']),
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        IconButton(
-                            icon: Icon(Icons.link),
-                            onPressed: () {
-                              launchUrl(item['url']);
-                            })
+                        Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.only(topLeft: Radius.circular(25.0), bottomRight: Radius.circular(25.0)),
+                              color: Colors.blueAccent.withOpacity(0.2)
+                          ),
+                          child: IconButton(
+                              icon: Icon(Icons.link),
+                              onPressed: () {
+                                launchUrl(item['url']);
+                              }),
+                          width: 120,
+                        )
                       ],
                     )
                   ],
@@ -141,19 +150,24 @@ class Search extends SearchDelegate {
     );
   }
 
+
   Widget getTags(list) {
-    print(list);
+    // print(list);
     List tagsList = list;
-    print(tagsList[0]);
+    // print(tagsList[0]);
     return SingleChildScrollView(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      scrollDirection: Axis.horizontal,
+      child: Wrap(
+        //mainAxisAlignment: MainAxisAlignment.center,
         children: tagsList.map(
-          (i) {
-            return Chip(
-              backgroundColor: Colors.blue,
-              label: Text(i, style: TextStyle(color: Colors.white)),
-              padding: EdgeInsets.all(5),
+              (i) {
+            return Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Chip(
+                backgroundColor: Colors.deepPurpleAccent,labelPadding: EdgeInsets.symmetric(horizontal: 15),
+                label: Text(i, style: TextStyle(color: Colors.white)),
+                padding: EdgeInsets.all(5),
+              ),
             );
           },
         ).toList(),
