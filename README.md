@@ -59,7 +59,6 @@ Now, you can add books,videos,blogs etc in the resources/json.data
 
 ```json
 {
-  "id": 1,
   "name": "Flutter Complete Beginner Course",
   "instructor": "Mtechviral",
   "url": "https://www.youtube.com/watch?v=6wQwnTIBD1Y",
@@ -69,7 +68,7 @@ Now, you can add books,videos,blogs etc in the resources/json.data
 }
 ```
 
-if you have image file then upload inside resources/images/ and write image address in json.data and dont forget to increment the id when you add new data.
+if you have image file then upload inside resources/images/ and write image address in json.data
 
 ## How to Report Bugs and Request Feature
 
