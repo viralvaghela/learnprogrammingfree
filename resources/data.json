@@ -408,5 +408,19 @@
       "R Studio",
       "Beginner"
     ]
+  },
+
+  {
+    "name": "Spring Framework And Dependency Injection For Beginners ",
+    "instructor": "Sanjay Patel",
+    "url": "https://www.udemy.com/course/spring-framework-video-tutorial/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-O_p3r9V2Rkx6ndGZtj7A4A&siteID=JVFxdTr9V80-8SNbhyaiGnts0o5GwK6r0A&utm_medium=udemyads&utm_source=aff-campaign",
+    "description": "Spring Framework Getting Started And Dependency Injection Fundamentals Tutorial For Real World Application Development ",
+    "image": "https://skywell.software/wp-content/uploads/2019/11/java-spring-framework-1024x683.jpg",
+    "tags": [
+      "Java",
+      "Application",
+      "Spring Framwork",
+      "Beginner"
+    ]
   }
 ]
